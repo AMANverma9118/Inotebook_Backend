@@ -14,7 +14,7 @@ app.get('/',function(req,res){
 })
 
 app.use('/api/user', require('./Routes/user'))
-app.use('/api/user', require('./Routes/notes'))
+app.use('/api/notes', require('./Routes/notes'))
 
 
 port = 8000 || process.env.PORT;
