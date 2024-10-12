@@ -93,7 +93,7 @@ router.post('/Login', [
 })
 
 // Route number 3 :It login a user with the api /api/user/getuser
-router.post('/getuser',fetchuser, async (req, res) => {
+router.post('/getuser', fetchuser, async (req, res) => {
   try {
     const userId = req.user.id;
     const user = await User.findById(userId).select("-password")
